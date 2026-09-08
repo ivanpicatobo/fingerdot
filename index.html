@@ -120,11 +120,12 @@ html[data-language="en"] [data-lang="en"]{display:block}
 </div>
     
 <section class="hero">
-<h1>Support &amp; Privacy</h1>
   <div data-lang="es">
+    <h1>Soporte y privacidad</h1>
     <p class="lead">Información oficial de soporte y privacidad de FingerDot.</p>
   </div>
   <div data-lang="en">
+    <h1>Support &amp; Privacy</h1>
     <p class="lead">Official FingerDot support and privacy information.</p>
   </div>
   <div class="lang">
@@ -172,7 +173,9 @@ html[data-language="en"] [data-lang="en"]{display:block}
       function setLanguage(lang) {
         document.documentElement.dataset.language = lang;
         document.documentElement.lang = lang;
-        document.title = "FingerDot · Support & Privacy";
+        document.title = lang === "es"
+          ? "FingerDot · Soporte y privacidad"
+          : "FingerDot · Support & Privacy";
         localStorage.setItem("fingerdot-site-language", lang);
         buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.setLanguage === lang));
       }
