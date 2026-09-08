@@ -16,15 +16,9 @@ Players are represented by colored circles that can be placed and moved around t
 
 ## Support
 
-For help, usage information or frequently asked questions:
-
 https://ivanpicatobo.github.io/fingerdot/support/
 
 ## Privacy
-
-FingerDot is designed to work without accounts, advertising or tracking.
-
-Privacy Policy:
 
 https://ivanpicatobo.github.io/fingerdot/privacy/
 
@@ -33,8 +27,6 @@ https://ivanpicatobo.github.io/fingerdot/privacy/
 https://ivanpicatobo.github.io/fingerdot/
 
 ## Contact
-
-For questions or support:
 
 ivanpicatobo@gmail.com
 
