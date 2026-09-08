@@ -1,18 +1,8 @@
-# FingerDot GitHub Pages
+# FingerDot GitHub Pages (versión actualizada)
 
-1. Crea un repositorio público en GitHub llamado `fingerdot`.
-2. Sube el contenido de esta carpeta a la raíz del repositorio.
-3. Ve a Settings → Pages.
-4. En Build and deployment selecciona `Deploy from a branch`.
-5. Selecciona `main` y `/ (root)`.
-6. Guarda.
+Esta versión corrige:
+- el logo superior usando el logo real de FingerDot;
+- el estilo del subrayado/realce de los títulos;
+- la tarjeta independiente de ayuda en la página de privacidad.
 
-La URL quedará normalmente:
-https://TU_USUARIO.github.io/fingerdot/
-
-Para App Store Connect:
-- Soporte: https://TU_USUARIO.github.io/fingerdot/support/
-- Privacidad: https://TU_USUARIO.github.io/fingerdot/privacy/
-
-El correo público incluido es:
-ivanpicatobo@gmail.com
+Sube el contenido de esta carpeta a la raíz de tu repositorio de GitHub Pages.

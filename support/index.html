@@ -1,46 +1,255 @@
 <!doctype html>
 <html lang="es" data-language="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#f7f0df">
-<meta name="description" content="FingerDot support and contact.">
-<title>FingerDot · Support</title>
-<style>
-:root{--bg:#f7f0df;--card:#fffdf7;--text:#1f2a44;--muted:#687085;--line:rgba(31,42,68,.12);--yellow:#f6dc76;--shadow:0 18px 50px rgba(31,42,68,.10)}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Arial,sans-serif}
-.wrap{width:min(920px,calc(100% - 32px));margin:auto;padding:28px 0 48px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:32px}
-.brand{text-decoration:none;font-weight:900;font-size:28px;letter-spacing:-.05em}.brand span:nth-child(1){color:#ef6a5b}.brand span:nth-child(2){color:#f2a23c}.brand span:nth-child(3){color:#f1c84a}.brand span:nth-child(4){color:#78b962}.brand span:nth-child(5){color:#54bca9}.brand span:nth-child(6){color:#5f9fe0}.brand span:nth-child(7){color:#8a78d1}.brand span:nth-child(8){color:#c468bd}.brand span:nth-child(9){color:#e8658c}
-.nav{display:flex;gap:8px}.nav a,.lang button{border:1px solid var(--line);background:rgba(255,255,255,.68);border-radius:999px;padding:9px 13px;text-decoration:none;font:inherit;font-size:14px;font-weight:700;color:var(--text)}
-.hero{text-align:center;margin:18px auto 30px;max-width:760px}.eyebrow{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}h1{font-size:clamp(38px,7vw,66px);line-height:.98;letter-spacing:-.055em;margin:10px 0 18px}.highlight{background:linear-gradient(transparent 58%,var(--yellow) 58%);padding:0 .08em}.lead{font-size:18px;line-height:1.6;color:var(--muted);margin:auto}.lang{display:flex;justify-content:center;gap:8px;margin-top:20px}.lang button{cursor:pointer}.lang button.active{background:var(--text);color:white}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}.full{grid-column:1/-1}h2{margin:0 0 12px;font-size:24px;letter-spacing:-.03em}h3{margin:22px 0 8px}p,li{line-height:1.65}.muted{color:var(--muted)}ul{padding-left:20px}.button{display:inline-flex;text-decoration:none;background:var(--text);color:white;border-radius:14px;padding:12px 16px;font-weight:800}.contact{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
-[data-lang]{display:none}html[data-language="es"] [data-lang="es"],html[data-language="en"] [data-lang="en"]{display:block}
-@media(max-width:680px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.wrap{width:min(100% - 22px,920px)}}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f0df">
+  <meta name="description" content="FingerDot support, instructions, frequently asked questions and contact.">
+  <title>FingerDot · Support</title>
+  <style>
+:root{
+  --bg:#f7f0df;
+  --card:#fffdf7;
+  --text:#1f2a44;
+  --muted:#687085;
+  --line:rgba(31,42,68,.12);
+  --yellow:#f6dc76;
+  --shadow:0 18px 50px rgba(31,42,68,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 10% 16%, rgba(245,193,139,.25) 0 8rem, transparent 8.2rem),
+    radial-gradient(circle at 90% 20%, rgba(191,229,208,.26) 0 7rem, transparent 7.2rem),
+    radial-gradient(circle at 12% 85%, rgba(205,188,233,.22) 0 7rem, transparent 7.2rem),
+    radial-gradient(circle at 88% 82%, rgba(183,216,244,.22) 0 8rem, transparent 8.2rem),
+    var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Arial,sans-serif;
+}
+a{color:inherit}
+.wrap{width:min(980px,calc(100% - 32px));margin:auto;padding:22px 0 48px}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  margin-bottom:34px;
+}
+.brand{display:inline-flex;align-items:center;text-decoration:none}
+.brand img{height:42px;width:auto;display:block}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a,.lang button{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.75);
+  border-radius:999px;
+  padding:10px 16px;
+  text-decoration:none;
+  font:inherit;
+  font-size:14px;
+  font-weight:700;
+  color:var(--text);
+  box-shadow:0 4px 14px rgba(31,42,68,.05);
+}
+.nav a:hover,.lang button:hover{background:white}
+.hero{
+  text-align:center;
+  margin:20px auto 34px;
+  max-width:860px;
+}
+.eyebrow{
+  font-size:13px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:var(--muted);
+}
+h1{
+  font-size:clamp(42px,7vw,72px);
+  line-height:1.05;
+  letter-spacing:-.055em;
+  margin:10px 0 18px;
+}
+.highlight{
+  display:inline-block;
+  position:relative;
+  padding:0 .08em;
+}
+.highlight::after{
+  content:"";
+  position:absolute;
+  left:.06em;
+  right:.06em;
+  bottom:.08em;
+  height:.55em;
+  background:var(--yellow);
+  z-index:-1;
+  border-radius:0;
+}
+.lead{
+  font-size:18px;
+  line-height:1.65;
+  color:var(--muted);
+  margin:0 auto;
+  max-width:760px;
+}
+.lang{display:flex;justify-content:center;gap:8px;margin-top:22px;flex-wrap:wrap}
+.lang button{cursor:pointer}
+.lang button.active{background:var(--text);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{
+  background:rgba(255,253,247,.94);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+.card.full{grid-column:1/-1}
+h2{margin:0 0 12px;font-size:24px;letter-spacing:-.03em}
+h3{margin:18px 0 8px;font-size:18px}
+p,li{line-height:1.65}
+p{margin:8px 0 0}
+ul{padding-left:20px;margin:10px 0 0}
+.muted{color:var(--muted)}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
+  background:var(--text);color:white;border-radius:14px;padding:12px 16px;font-weight:800;
+}
+.contact{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+[data-lang]{display:none}
+html[data-language="es"] [data-lang="es"],
+html[data-language="en"] [data-lang="en"]{display:block}
+@media(max-width:680px){
+  .grid{grid-template-columns:1fr}
+  .card.full{grid-column:auto}
+  .wrap{width:min(100% - 22px,980px)}
+  .brand img{height:34px}
+  .topbar{margin-bottom:24px}
+  h1{font-size:clamp(34px,11vw,52px)}
+  .nav a,.lang button{padding:9px 14px}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-<div class="topbar">
-<a class="brand" href="../"><span>F</span><span>i</span><span>n</span><span>g</span><span>e</span><span>r</span><span>D</span><span>o</span><span>t</span></a>
-<nav class="nav"><a href="../support/">Support</a><a href="../privacy/">Privacy</a></nav>
-</div>
-
-<section class="hero"><div class="eyebrow">FingerDot</div>
-<div data-lang="es"><h1>Centro de <span class="highlight">soporte</span></h1><p class="lead">Todo lo necesario para empezar a usar FingerDot y resolver las dudas más habituales.</p></div>
-<div data-lang="en"><h1><span class="highlight">Support</span> center</h1><p class="lead">Everything you need to get started with FingerDot and solve the most common questions.</p></div>
-<div class="lang"><button data-set-language="es">Español</button><button data-set-language="en">English</button></div></section>
-<section class="grid">
-<article class="card"><div data-lang="es"><h2>Cómo jugar</h2><ul><li>Toca la pantalla para colocar un jugador.</li><li>Toca y arrastra un círculo para moverlo.</li><li>Toca un círculo 3 veces para eliminarlo.</li><li>Pulsa <strong>Listo</strong> para realizar la selección.</li></ul></div><div data-lang="en"><h2>How to play</h2><ul><li>Tap the screen to place a player.</li><li>Tap and drag a circle to move it.</li><li>Tap a circle 3 times to remove it.</li><li>Tap <strong>Ready</strong> to make the selection.</li></ul></div></article>
-<article class="card"><div data-lang="es"><h2>Modos</h2><p><strong>Individual:</strong> elige una persona al azar.</p><p><strong>Equipos:</strong> divide a los jugadores entre los equipos configurados de la forma más equilibrada posible.</p></div><div data-lang="en"><h2>Modes</h2><p><strong>Individual:</strong> randomly chooses one person.</p><p><strong>Teams:</strong> divides players into the selected number of teams as evenly as possible.</p></div></article>
-<article class="card"><div data-lang="es"><h2>Opciones</h2><p>Puedes cambiar el modo, el número de equipos, la numeración de jugadores y el idioma.</p></div><div data-lang="en"><h2>Options</h2><p>You can change the mode, number of teams, player numbering and language.</p></div></article>
-<article class="card"><div data-lang="es"><h2>Sonido</h2><p>FingerDot utiliza sonidos cortos para los botones y los rebotes. El volumen depende del nivel de sonido del dispositivo.</p></div><div data-lang="en"><h2>Sound</h2><p>FingerDot uses short sounds for buttons and bounces. Volume depends on the device sound level.</p></div></article>
-<article class="card full"><div class="contact"><div data-lang="es"><h2>¿Necesitas ayuda?</h2><p class="muted">Escríbenos por correo e incluye una breve descripción del problema.</p></div><div data-lang="en"><h2>Need help?</h2><p class="muted">Email us and include a short description of the issue.</p></div><a class="button" href="mailto:ivanpicatobo@gmail.com">ivanpicatobo@gmail.com</a></div></article>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="../" aria-label="FingerDot home">
+        <img src="../assets/fingerdot-logo.png" alt="FingerDot">
+      </a>
+      <nav class="nav">
+        <a href="../support/">Support</a>
+        <a href="../privacy/">Privacy</a>
+      </nav>
+    </div>
+    
+<section class="hero">
+  <div class="eyebrow">FingerDot</div>
+  <div data-lang="es">
+    <h1>Centro de <span class="highlight">soporte</span></h1>
+    <p class="lead">Todo lo necesario para empezar a usar FingerDot y resolver las dudas más habituales.</p>
+  </div>
+  <div data-lang="en">
+    <h1><span class="highlight">Support</span> center</h1>
+    <p class="lead">Everything you need to get started with FingerDot and solve the most common questions.</p>
+  </div>
+  <div class="lang">
+    <button type="button" data-set-language="es">Español</button>
+    <button type="button" data-set-language="en">English</button>
+  </div>
 </section>
 
-<footer>© 2026 Iván Picazo Toboso · FingerDot</footer>
-</div>
-<script>
-(()=>{const b=document.querySelectorAll("[data-set-language]");const saved=localStorage.getItem("fingerdot-site-language");const initial=saved||((navigator.language||"es").toLowerCase().startsWith("es")?"es":"en");function setLang(l){document.documentElement.dataset.language=l;document.documentElement.lang=l;localStorage.setItem("fingerdot-site-language",l);b.forEach(x=>x.classList.toggle("active",x.dataset.setLanguage===l));}b.forEach(x=>x.addEventListener("click",()=>setLang(x.dataset.setLanguage)));setLang(initial);})();
-</script>
+<section class="grid">
+  <article class="card">
+    <div data-lang="es">
+      <h2>Cómo jugar</h2>
+      <ul>
+        <li>Toca la pantalla para colocar un jugador.</li>
+        <li>Toca y arrastra un círculo para moverlo.</li>
+        <li>Toca un círculo 3 veces para eliminarlo.</li>
+        <li>Pulsa <strong>Listo</strong> para realizar la selección.</li>
+      </ul>
+    </div>
+    <div data-lang="en">
+      <h2>How to play</h2>
+      <ul>
+        <li>Tap the screen to place a player.</li>
+        <li>Tap and drag a circle to move it.</li>
+        <li>Tap a circle 3 times to remove it.</li>
+        <li>Tap <strong>Ready</strong> to make the selection.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="card">
+    <div data-lang="es">
+      <h2>Modos</h2>
+      <p><strong>Individual:</strong> elige una persona al azar.</p>
+      <p><strong>Equipos:</strong> divide a los jugadores entre los equipos configurados de la forma más equilibrada posible.</p>
+    </div>
+    <div data-lang="en">
+      <h2>Modes</h2>
+      <p><strong>Individual:</strong> randomly chooses one person.</p>
+      <p><strong>Teams:</strong> divides players into the selected number of teams as evenly as possible.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <div data-lang="es">
+      <h2>Opciones</h2>
+      <p>Puedes cambiar el modo, el número de equipos, la numeración de jugadores y el idioma.</p>
+    </div>
+    <div data-lang="en">
+      <h2>Options</h2>
+      <p>You can change the mode, number of teams, player numbering and language.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <div data-lang="es">
+      <h2>Sonido</h2>
+      <p>FingerDot utiliza sonidos cortos para los botones y los rebotes. El volumen depende del nivel de sonido del dispositivo.</p>
+    </div>
+    <div data-lang="en">
+      <h2>Sound</h2>
+      <p>FingerDot uses short sounds for buttons and bounces. Volume depends on the device sound level.</p>
+    </div>
+  </article>
+
+  <article class="card full">
+    <div class="contact">
+      <div data-lang="es">
+        <h2>¿Necesitas ayuda?</h2>
+        <p class="muted">Escríbenos por correo e incluye una breve descripción del problema.</p>
+      </div>
+      <div data-lang="en">
+        <h2>Need help?</h2>
+        <p class="muted">Email us and include a short description of the issue.</p>
+      </div>
+      <a class="button" href="mailto:ivanpicatobo@gmail.com">ivanpicatobo@gmail.com</a>
+    </div>
+  </article>
+</section>
+
+    <footer>© 2026 Iván Picazo Toboso · FingerDot</footer>
+  </div>
+  <script>
+    (() => {
+      const buttons = document.querySelectorAll("[data-set-language]");
+      const saved = localStorage.getItem("fingerdot-site-language");
+      const browser = (navigator.language || "es").toLowerCase();
+      const initial = saved || (browser.startsWith("es") ? "es" : "en");
+      function setLanguage(lang) {
+        document.documentElement.dataset.language = lang;
+        document.documentElement.lang = lang;
+        localStorage.setItem("fingerdot-site-language", lang);
+        buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.setLanguage === lang));
+      }
+      buttons.forEach(btn => btn.addEventListener("click", () => setLanguage(btn.dataset.setLanguage)));
+      setLanguage(initial);
+    })();
+  </script>
 </body>
 </html>
