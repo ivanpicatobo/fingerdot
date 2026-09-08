@@ -1,12 +1,43 @@
-# FingerDot GitHub Pages · v4
+# FingerDot
 
-Cambios finales:
-- La portada muestra `Support & Privacy` tanto con Español como con English seleccionado.
-- Se elimina el pequeño texto `FingerDot` situado encima de los títulos en todas las páginas.
-- En la portada se eliminan los botones superiores `Support` y `Privacy`.
-- En las páginas Support y Privacy se mantienen los botones superiores de navegación.
-- Se conserva el logo real de FingerDot.
-- Se conservan los enlaces corregidos para GitHub Pages dentro de `/fingerdot/`.
-- Se mantiene la tarjeta `¿Necesitas ayuda? / Need help?` en la página de privacidad.
+FingerDot is a simple and visual app designed to randomly choose a player or create balanced teams.
 
-Sube el contenido de esta carpeta a la raíz del repositorio `fingerdot`.
+Players are represented by colored circles that can be placed and moved around the screen. Once everyone is ready, FingerDot makes the selection.
+
+## Features
+
+- Randomly choose one player
+- Create balanced teams
+- Move players freely around the screen
+- Optional player numbering
+- Multiple languages
+- Simple and visual interface
+- No account required
+
+## Support
+
+For help, usage information or frequently asked questions:
+
+https://ivanpicatobo.github.io/fingerdot/support/
+
+## Privacy
+
+FingerDot is designed to work without accounts, advertising or tracking.
+
+Privacy Policy:
+
+https://ivanpicatobo.github.io/fingerdot/privacy/
+
+## Website
+
+https://ivanpicatobo.github.io/fingerdot/
+
+## Contact
+
+For questions or support:
+
+ivanpicatobo@gmail.com
+
+---
+
+© 2026 Iván Picazo Toboso
