@@ -70,22 +70,6 @@ h1{
   letter-spacing:-.055em;
   margin:10px 0 18px;
 }
-.highlight{
-  display:inline-block;
-  position:relative;
-  padding:0 .08em;
-}
-.highlight::after{
-  content:"";
-  position:absolute;
-  left:.06em;
-  right:.06em;
-  bottom:.08em;
-  height:.55em;
-  background:var(--yellow);
-  z-index:-1;
-  border-radius:0;
-}
 .lead{
   font-size:18px;
   line-height:1.65;
@@ -136,18 +120,18 @@ html[data-language="en"] [data-lang="en"]{display:block}
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="brand" href="../" aria-label="FingerDot home">
-        <img src="../assets/fingerdot-logo.png" alt="FingerDot">
+      <a class="brand" href="/fingerdot/" aria-label="FingerDot home">
+        <img src="/fingerdot/assets/fingerdot-logo.png" alt="FingerDot">
       </a>
       <nav class="nav">
-        <a href="../support/">Support</a>
-        <a href="../privacy/">Privacy</a>
+        <a href="/fingerdot/support/">Support</a>
+        <a href="/fingerdot/privacy/">Privacy</a>
       </nav>
     </div>
     
 <section class="hero">
   <div class="eyebrow">FingerDot</div>
-  <h1><span class="highlight">Support & Privacy</span></h1>
+  <h1>Support & Privacy</span></h1>
   <div data-lang="es">
     <p class="lead">Información oficial de soporte y privacidad de FingerDot.</p>
   </div>
@@ -165,12 +149,12 @@ html[data-language="en"] [data-lang="en"]{display:block}
     <div data-lang="es">
       <h2>Soporte</h2>
       <p class="muted">Instrucciones, preguntas frecuentes y contacto.</p>
-      <p><a class="button" href="./support/">Abrir soporte</a></p>
+      <p><a class="button" href="/fingerdot/support/">Abrir soporte</a></p>
     </div>
     <div data-lang="en">
       <h2>Support</h2>
       <p class="muted">Instructions, frequently asked questions and contact.</p>
-      <p><a class="button" href="./support/">Open support</a></p>
+      <p><a class="button" href="/fingerdot/support/">Open support</a></p>
     </div>
   </article>
 
@@ -178,12 +162,12 @@ html[data-language="en"] [data-lang="en"]{display:block}
     <div data-lang="es">
       <h2>Privacidad</h2>
       <p class="muted">Cómo trata FingerDot los datos y las preferencias de la app.</p>
-      <p><a class="button" href="./privacy/">Ver privacidad</a></p>
+      <p><a class="button" href="/fingerdot/privacy/">Ver privacidad</a></p>
     </div>
     <div data-lang="en">
       <h2>Privacy</h2>
       <p class="muted">How FingerDot handles app data and preferences.</p>
-      <p><a class="button" href="./privacy/">View privacy</a></p>
+      <p><a class="button" href="/fingerdot/privacy/">View privacy</a></p>
     </div>
   </article>
 </section>
@@ -199,6 +183,9 @@ html[data-language="en"] [data-lang="en"]{display:block}
       function setLanguage(lang) {
         document.documentElement.dataset.language = lang;
         document.documentElement.lang = lang;
+        document.title = lang === "es"
+          ? "FingerDot · Soporte y privacidad"
+          : "FingerDot · Support & Privacy";
         localStorage.setItem("fingerdot-site-language", lang);
         buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.setLanguage === lang));
       }
