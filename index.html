@@ -57,13 +57,7 @@ a{color:inherit}
   margin:20px auto 34px;
   max-width:860px;
 }
-.eyebrow{
-  font-size:13px;
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:.14em;
-  color:var(--muted);
-}
+
 h1{
   font-size:clamp(42px,7vw,72px);
   line-height:1.05;
@@ -123,15 +117,10 @@ html[data-language="en"] [data-lang="en"]{display:block}
       <a class="brand" href="/fingerdot/" aria-label="FingerDot home">
         <img src="/fingerdot/assets/fingerdot-logo.png" alt="FingerDot">
       </a>
-      <nav class="nav">
-        <a href="/fingerdot/support/">Support</a>
-        <a href="/fingerdot/privacy/">Privacy</a>
-      </nav>
-    </div>
+</div>
     
 <section class="hero">
-  <div class="eyebrow">FingerDot</div>
-  <h1>Support & Privacy</span></h1>
+<h1>Support &amp; Privacy</h1>
   <div data-lang="es">
     <p class="lead">Información oficial de soporte y privacidad de FingerDot.</p>
   </div>
@@ -183,9 +172,7 @@ html[data-language="en"] [data-lang="en"]{display:block}
       function setLanguage(lang) {
         document.documentElement.dataset.language = lang;
         document.documentElement.lang = lang;
-        document.title = lang === "es"
-          ? "FingerDot · Soporte y privacidad"
-          : "FingerDot · Support & Privacy";
+        document.title = "FingerDot · Support & Privacy";
         localStorage.setItem("fingerdot-site-language", lang);
         buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.setLanguage === lang));
       }

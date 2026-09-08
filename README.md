@@ -1,12 +1,12 @@
-# FingerDot GitHub Pages · v3
+# FingerDot GitHub Pages · v4
 
-Cambios:
-- elimina el resaltado/subrayado amarillo de los títulos;
-- usa el logo real de FingerDot;
-- corrige el enlace del logo para volver siempre a `/fingerdot/`;
-- corrige Support, Privacy y el logo para funcionar dentro de GitHub Pages como project site;
-- en la portada, el título cambia entre `Soporte y privacidad` y `Support & Privacy` según el idioma;
-- la pestaña del navegador también adapta ese título;
-- mantiene la tarjeta `¿Necesitas ayuda? / Need help?` en privacidad.
+Cambios finales:
+- La portada muestra `Support & Privacy` tanto con Español como con English seleccionado.
+- Se elimina el pequeño texto `FingerDot` situado encima de los títulos en todas las páginas.
+- En la portada se eliminan los botones superiores `Support` y `Privacy`.
+- En las páginas Support y Privacy se mantienen los botones superiores de navegación.
+- Se conserva el logo real de FingerDot.
+- Se conservan los enlaces corregidos para GitHub Pages dentro de `/fingerdot/`.
+- Se mantiene la tarjeta `¿Necesitas ayuda? / Need help?` en la página de privacidad.
 
 Sube el contenido de esta carpeta a la raíz del repositorio `fingerdot`.
